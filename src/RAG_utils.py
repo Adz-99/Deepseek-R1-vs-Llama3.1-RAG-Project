@@ -11,7 +11,7 @@ working_dir = os.getcwd()
 
 # config_data = json.load(open(f"{working_dir}/src/config.json"))
 # os.environ["GROQ_API_KEY"] = config_data["GROQ_API_KEY"]
-os.environ["GROQ_API_KEY"] = secrets.GROQ_API_KEY
+os.environ["GROQ_API_KEY"] = st.secrets["GROQ_API_KEY"]
 
 # Setup llms and embedding
 llm_deepseek = ChatGroq(
